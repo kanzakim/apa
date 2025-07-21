@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Diari Untukmu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="book">
+    <div class="page" onclick="nextPage(0)">
+      <h2>Halaman 1</h2>
+      <p>Di sinilah semuanya bermula, saat aku mulai memperhatikanmu...</p>
+    </div>
+    <div class="page" onclick="nextPage(1)">
+      <h2>Halaman 2</h2>
+      <p>Tiap detik bersamamu dalam bayang, seolah dunia berbicara lewat diamnya...</p>
+    </div>
+    <div class="page secret" style="display:none">
+      <h2>Halaman Rahasia</h2>
+      <p><em>Jika kamu membaca ini... berarti kamu tahu siapa aku sebenarnya. Bukan hanya orang muda yang diam-diam memandang, tapi seseorang yang benar-benar kagum padamu.</em></p>
+    </div>
+    <div class="input-keyword">
+      <p>Masukkan kata kunci untuk membuka halaman rahasia:</p>
+      <input type="text" id="keyword" placeholder="Kata rahasia">
+      <button onclick="reveal()">Buka</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
